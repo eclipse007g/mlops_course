@@ -1,0 +1,4 @@
+pandas
+dvc
+scikit-learn
+google-cloud-aiplatform
