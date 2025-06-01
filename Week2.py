@@ -86,7 +86,7 @@ BUCKET_URI = f"gs://mlops-course-mlops-course-assignment1-week1"  # @param {type
 # **If your bucket doesn't already exist**: Run the following cell to create your Cloud Storage bucket.
 
 # %%
-! gsutil mb -l {LOCATION} -p {PROJECT_ID} {BUCKET_URI}
+#! gsutil mb -l {LOCATION} -p {PROJECT_ID} {BUCKET_URI}
 
 # %% [markdown]
 # ### Initialize Vertex AI SDK for Python
@@ -182,8 +182,8 @@ joblib.dump(mod_dt, "artifacts/model.joblib")
 # Run the following commands to upload your files:
 
 # %%
-!gsutil cp artifacts/model.joblib {BUCKET_URI}/{MODEL_ARTIFACT_DIR}/
-
+cmd="gsutil cp artifacts/model.joblib {0)/{1}/".format(BUCKET_URI,MODEL_ARTIFACT_DIR)
+os.system(cmd)
 # %%
 
 
