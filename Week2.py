@@ -64,7 +64,7 @@
 # %%
 
 # Vertex SDK for Python
-! pip3 install --upgrade --quiet  google-cloud-aiplatform
+#! pip3 install --upgrade --quiet  google-cloud-aiplatform
 
 # %% [markdown]
 # ### Set Google Cloud project information 
