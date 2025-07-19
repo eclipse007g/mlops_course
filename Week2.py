@@ -182,7 +182,7 @@ joblib.dump(mod_dt, "artifacts/model.joblib")
 # Run the following commands to upload your files:
 
 # %%
-cmd="gsutil cp artifacts/model.joblib {0)/{1}/".format(BUCKET_URI,MODEL_ARTIFACT_DIR)
+cmd="gsutil cp artifacts/model.joblib {0}/{1}/".format(BUCKET_URI,MODEL_ARTIFACT_DIR)
 os.system(cmd)
 # %%
 
