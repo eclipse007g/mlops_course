@@ -29,3 +29,4 @@ jobs:
             echo "\`\`\`" >> report.md
             cat test_output.txt >> report.md
             echo "\`\`\`" >> report.md
+            cml comment create --publish report.md
